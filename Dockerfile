@@ -1,5 +1,5 @@
-FROM binhex/arch-int-gui:latest
-MAINTAINER binhex
+FROM rcannizzaro/arch-int-gui:latest
+MAINTAINER rcannizzaro
 
 # additional files
 ##################

@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="git tk mono dotnet-sdk"
+pacman_packages="git tk mc nano mono dotnet-sdk"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -46,7 +46,7 @@ fi
 ####
 
 # define aur packages
-aur_packages="msbuild-15-bin rider"
+aur_packages="msbuild-15-bin rider clion-cmake ghidra-bin gitahead-bin"
 
 # build package only, as apacman seems to be having issues finding the rider built
 # package, probably related to the fact that the package version has a colon, so

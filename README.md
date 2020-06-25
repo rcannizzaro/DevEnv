@@ -1,16 +1,19 @@
-**Application**
-
-[Rider](https://www.jetbrains.com/rider/)
-
 **Description**
 
-JetBrains Rider is a cross-platform .NET IDE based on the IntelliJ platform and ReSharper. Rider supports .NET Framework, the new cross-platform .NET Core, and Mono based projects. This lets you develop a wide range of applications including .NET desktop applications, services and libraries, Unity games, Xamarin apps, ASP.NET and ASP.NET Core web applications.
+My development environment using Docker. I generally run this on an unRAID server and have it set up so I can access it remotely.
+
+**Applications Included**
+
+[Rider](https://www.jetbrains.com/rider/)
+[CLion](https://www.jetbrains.com/clion/)
+[Ghidra](https://www.jetbrains.com/clion/)
+[GitAhead](https://www.jetbrains.com/clion/)
+[Midnight Commander](https://www.jetbrains.com/clion/)
+[Nano](https://www.jetbrains.com/clion/)
 
 **Build notes**
 
-Latest stable Rider release from Arch Linux.
-
-Note:- This application requires a license, otherwise it will run in Evaluation Mode for 30 days.
+Using ArchLinux. Forked (with thanks!) from Binhex.
 
 **Usage**
 ```
@@ -39,15 +42,15 @@ docker run -d \
     -p 5900:5900 \
     -p 6080:6080 \
     --name=rider \
-    -v /apps/docker/rider:/config \
-    -v /apps/docker/rider/projects:/data \
+    -v /apps/docker/devenv:/config \
+    -v /apps/docker/devenv/projects:/data \
     -v /etc/localtime:/etc/localtime:ro \
-    -e WEBPAGE_TITLE=Rider \
+    -e WEBPAGE_TITLE=Devenv \
     -e VNC_PASSWORD=mypassword \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-rider
+    rcannizzaro/devenv
 ```
 
 **Access via web interface (noVNC)**
@@ -73,9 +76,3 @@ User ID (PUID) and Group ID (PGID) can be found by issuing the following command
 ```
 id <username>
 ```
-___
-If you appreciate my work, then please consider buying me a beer  :D
-
-[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
-
-[Documentation](https://github.com/binhex/documentation) | [Support forum](https://forums.unraid.net/topic/76727-support-binhex-rider/)
