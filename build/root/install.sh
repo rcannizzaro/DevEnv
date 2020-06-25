@@ -7,7 +7,7 @@ set -e
 ####
 
 # download build scripts from github
-curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/scripts-master.zip -L https://github.com/binhex/scripts/archive/master.zip
+curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/scripts-master.zip -L https://github.com/rcannizzaro/devenv-scripts/archive/master.zip
 
 # unzip build scripts
 unzip /tmp/scripts-master.zip -d /tmp

@@ -1,4 +1,4 @@
-FROM rcannizzaro/arch-int-gui:latest
+FROM rcannizzaro/devenv-os:latest
 MAINTAINER rcannizzaro
 
 # additional files
