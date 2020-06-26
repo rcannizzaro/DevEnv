@@ -5,10 +5,15 @@ My development environment using Docker. I generally run this on an unRAID serve
 **Applications Included**
 
 [Rider](https://www.jetbrains.com/rider/)
+
 [CLion](https://www.jetbrains.com/clion/)
+
 [Ghidra](https://www.jetbrains.com/clion/)
+
 [GitAhead](https://www.jetbrains.com/clion/)
+
 [Midnight Commander](https://www.jetbrains.com/clion/)
+
 [Nano](https://www.jetbrains.com/clion/)
 
 **Build notes**
