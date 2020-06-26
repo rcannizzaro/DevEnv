@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="git tk mc nano mono dotnet-sdk"
+pacman_packages="git tk mc nano mono dotnet-sdk gtk-doc"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
