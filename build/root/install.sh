@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="base-devel git tk mc nano mono dotnet-sdk"
+pacman_packages="gtk-doc base-devel git tk mc nano mono dotnet-sdk"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -61,6 +61,9 @@ aur_packages="msbuild-15-bin rider"
 source aur.sh
 
 aur_packages="webstorm"
+source aur.sh
+
+aur_packages="clion-cmake"
 source aur.sh
 
 aur_packages="github-desktop-bin"
