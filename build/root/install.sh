@@ -35,7 +35,8 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="gtk-doc base-devel git tk mc nano mono dotnet-sdk"
+#pacman_packages="gtk-doc base-devel git tk mc nano mono dotnet-sdk"
+pacman_packages="base-devel git tk mc nano mono dotnet-sdk"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -46,7 +47,8 @@ fi
 ####
 
 # define aur packages
-aur_packages="msbuild-15-bin ghidra-bin github-desktop-bin visual-studio-code-bin rider webstorm"
+#aur_packages="msbuild-15-bin ghidra-bin github-desktop-bin visual-studio-code-bin rider webstorm"
+aur_packages="msbuild-15-bin rider"
 
 # build package only, as apacman seems to be having issues finding the rider built
 # package, probably related to the fact that the package version has a colon, so
