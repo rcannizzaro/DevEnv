@@ -8,13 +8,13 @@ My development environment using Docker. I generally run this on an unRAID serve
 
 [CLion](https://www.jetbrains.com/clion/)
 
-[Ghidra](https://www.jetbrains.com/clion/)
+[Ghidra](https://ghidra-sre.org/)
 
-[GitAhead](https://www.jetbrains.com/clion/)
+[Github Desktop](https://github.com/shiftkey/desktop/)
 
 [Midnight Commander](https://www.jetbrains.com/clion/)
 
-[Nano](https://www.jetbrains.com/clion/)
+[Nano](https://www.nano-editor.org/)
 
 **Build notes**
 

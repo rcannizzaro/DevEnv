@@ -53,7 +53,14 @@ aur_build_only="true"
 
 # define aur packages
 # call aur install script (arch user repo)
+
+aur_packages="gconf-gtk2"
+source aur.sh
+
 aur_packages="msbuild-15-bin rider"
+source aur.sh
+
+aur_packages="webstorm"
 source aur.sh
 
 aur_packages="github-desktop-bin"
@@ -63,9 +70,6 @@ aur_packages="ghidra-bin"
 source aur.sh
 
 aur_packages="visual-studio-code-bin"
-source aur.sh
-
-aur_packages="webstorm"
 source aur.sh
 
 # config novnc
