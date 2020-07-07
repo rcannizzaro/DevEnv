@@ -72,9 +72,9 @@ source aur.sh
 aur_packages="visual-studio-code-bin"
 source aur.sh
 
-aur_packages="github-desktop-bin"
-aur_build_only="false"
-source aur.sh
+#aur_packages="github-desktop-bin"
+#aur_build_only="false"
+#source aur.sh
 
 # config novnc
 ###
