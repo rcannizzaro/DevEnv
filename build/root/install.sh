@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="gtk-doc base-devel git tk mc nano mono dotnet-sdk"
+pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -63,16 +63,17 @@ source aur.sh
 aur_packages="webstorm"
 source aur.sh
 
-aur_packages="clion-cmake"
+aur_packages="clion clion-cmake google-fruit"
 source aur.sh
-
-#aur_packages="github-desktop-bin"
-#source aur.sh
 
 aur_packages="ghidra-bin"
 source aur.sh
 
 aur_packages="visual-studio-code-bin"
+source aur.sh
+
+aur_packages="github-desktop-bin"
+aur_build_only="false"
 source aur.sh
 
 # config novnc
