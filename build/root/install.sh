@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip"
+pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip make gcc gdb"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -84,7 +84,7 @@ cp /home/nobody/novnc-16x16.png /usr/share/webapps/novnc/app/images/icons/
 
 cat <<'EOF' > /tmp/startcmd_heredoc
 # run rider
-/usr/bin/rider
+# /usr/bin/rider
 EOF
 
 # replace startcmd placeholder string with contents of file (here doc)
@@ -106,6 +106,38 @@ cat <<'EOF' > /tmp/menu_heredoc
       </startupnotify>
     </action>
     </item>
+    <item label="Clion">
+    <action name="Execute">
+      <command>/usr/bin/clion</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+    </item>	
+    <item label="WebStorm">
+    <action name="Execute">
+      <command>/usr/bin/webstorm</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+    </item>		
+    <item label="Ghidra">
+    <action name="Execute">
+      <command>/usr/bin/ghidra</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+    </item>
+    <item label="Midnight Commander">
+    <action name="Execute">
+      <command>/usr/bin/mc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+    </item>		
 EOF
 
 # replace menu placeholder string with contents of file (here doc)

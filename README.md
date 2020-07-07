@@ -16,6 +16,10 @@ My development environment using Docker. I generally run this on an unRAID serve
 
 [Nano](https://www.nano-editor.org/)
 
+**Libraries Included**
+
+[Google Fruit](https://github.com/google/fruit)
+
 **Build notes**
 
 Using ArchLinux. Forked (with thanks!) from Binhex.
