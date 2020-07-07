@@ -54,8 +54,8 @@ aur_build_only="true"
 # define aur packages
 # call aur install script (arch user repo)
 
-aur_packages="gconf-gtk2"
-source aur.sh
+#aur_packages="gconf-gtk2"
+#source aur.sh
 
 aur_packages="msbuild-15-bin rider"
 source aur.sh
@@ -66,8 +66,8 @@ source aur.sh
 aur_packages="clion-cmake"
 source aur.sh
 
-aur_packages="github-desktop-bin"
-source aur.sh
+#aur_packages="github-desktop-bin"
+#source aur.sh
 
 aur_packages="ghidra-bin"
 source aur.sh
