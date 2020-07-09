@@ -16,6 +16,10 @@ My development environment using Docker. I generally run this on an unRAID serve
 
 [Nano](https://www.nano-editor.org/)
 
+[DBeaver](https://dbeaver.io/)
+
+[Wine](https://www.winehq.org/)
+
 **Libraries Included**
 
 [Google Fruit](https://github.com/google/fruit)

@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip make gcc gdb"
+pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip make gcc gdb dbeaver wine wine-gecko wine-mono"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -137,7 +137,15 @@ cat <<'EOF' > /tmp/menu_heredoc
         <enabled>yes</enabled>
       </startupnotify>
     </action>
-    </item>		
+    </item>
+    <item label="DBeaver">
+    <action name="Execute">
+      <command>/usr/bin/dbeaver</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+    </item>	    
 EOF
 
 # replace menu placeholder string with contents of file (here doc)
