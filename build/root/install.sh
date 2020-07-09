@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip make gcc gdb dbeaver wine wine-gecko wine-mono"
+pacman_packages="base-devel git tk mc nano mono dotnet-sdk p7zip make gcc gdb dbeaver wine wine-gecko wine-mono chromium w3m"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then

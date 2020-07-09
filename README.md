@@ -20,6 +20,10 @@ My development environment using Docker. I generally run this on an unRAID serve
 
 [Wine](https://www.winehq.org/)
 
+[Chromium](https://www.chromium.org/)
+
+[w3m](https://salsa.debian.org/debian/w3m/)
+
 **Libraries Included**
 
 [Google Fruit](https://github.com/google/fruit)
