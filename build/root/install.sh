@@ -10,7 +10,7 @@ set -e
 curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/scripts-master.zip -L https://github.com/rcannizzaro/devenv-scripts/archive/master.zip
 
 # unzip build scripts
-unzip /tmp/scripts-master.zip -d /tmp
+unzip -o /tmp/scripts-master.zip -d /tmp
 
 # move shell scripts to /root
 mv /tmp/DevEnv-Scripts-master/shell/arch/docker/*.sh /usr/local/bin/
@@ -86,74 +86,6 @@ cat <<'EOF' > /tmp/startcmd_heredoc
 # run rider
 # /usr/bin/rider
 EOF
-
-# replace startcmd placeholder string with contents of file (here doc)
-sed -i '/# STARTCMD_PLACEHOLDER/{
-    s/# STARTCMD_PLACEHOLDER//g
-    r /tmp/startcmd_heredoc
-}' /home/nobody/start.sh
-rm /tmp/startcmd_heredoc
-
-# config openbox
-####
-
-cat <<'EOF' > /tmp/menu_heredoc
-    <item label="Rider">
-    <action name="Execute">
-      <command>/usr/bin/rider</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>
-    <item label="Clion">
-    <action name="Execute">
-      <command>/usr/bin/clion</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>	
-    <item label="WebStorm">
-    <action name="Execute">
-      <command>/usr/bin/webstorm</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>		
-    <item label="Ghidra">
-    <action name="Execute">
-      <command>/usr/bin/ghidra</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>
-    <item label="Midnight Commander">
-    <action name="Execute">
-      <command>/usr/bin/mc</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>
-    <item label="DBeaver">
-    <action name="Execute">
-      <command>/usr/bin/dbeaver</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-      </startupnotify>
-    </action>
-    </item>	    
-EOF
-
-# replace menu placeholder string with contents of file (here doc)
-sed -i '/<!-- APPLICATIONS_PLACEHOLDER -->/{
-    s/<!-- APPLICATIONS_PLACEHOLDER -->//g
-    r /tmp/menu_heredoc
-}' /home/nobody/.config/openbox/menu.xml
-rm /tmp/menu_heredoc
 
 # env vars
 ####
